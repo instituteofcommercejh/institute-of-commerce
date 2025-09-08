@@ -27,16 +27,16 @@ const TopPerformers = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-primary mb-6">
-            Top Performers
+            Recent Results
           </h2>
           <p className="font-inter text-xl text-muted-foreground max-w-2xl mx-auto">
-            Celebrating our outstanding students who achieved excellence in their board examinations
+            Our students from 2024 board exams who scored 70%+ with focused preparation and regular practice
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto animate-scale-in" style={{animationDelay: '0.3s'}}>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto animate-scale-in" style={{animationDelay: '0.3s'}}>
           {performers.map((performer, index) => (
-            <div key={index} className="group relative p-6 md:p-8 text-center bg-card rounded-lg border border-border hover-lift hover-glow">
+            <div key={index} className="group relative p-6 md:p-8 text-center bg-card rounded-lg border border-border hover-lift hover-glow min-h-[200px] md:min-h-[240px] flex flex-col justify-center">
               <div className="mb-4 transition-transform group-hover:scale-110 flex justify-center">
                 <div className="w-16 h-16 rounded-full bg-gradient-to-r from-primary to-primary/80 flex items-center justify-center">
                   {index === 0 ? (

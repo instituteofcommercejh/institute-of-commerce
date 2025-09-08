@@ -114,8 +114,8 @@ const Enrollment = () => {
       {/* Enrollment Form Section */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4 max-w-2xl">
-          <div className="group relative p-8 bg-card rounded-lg border border-border transition-all duration-300 hover:shadow-glow-hover">
-            <h2 className="font-heading text-3xl font-bold mb-6 text-center">Course Enrollment Form</h2>
+          <div className="group relative p-6 md:p-8 bg-card rounded-lg border border-border transition-all duration-300 hover:shadow-glow-hover">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-center">Course Enrollment Form</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="font-semibold text-foreground mb-2 block">Full Name *</label>

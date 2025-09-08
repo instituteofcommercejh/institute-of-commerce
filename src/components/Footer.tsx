@@ -5,21 +5,21 @@ const Footer = () => {
   return (
     <footer className="bg-background border-t border-border pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Logo and Description */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/lovable-uploads/c92d1054-d300-48ac-b099-abf0323b6d8c.png" 
+                src="/favicon.png" 
                 alt="Institute of Commerce Logo" 
-                className="h-8 w-8"
+                className="h-8 w-8 flex-shrink-0"
               />
-              <span className="font-heading font-bold text-xl text-foreground">
+              <span className="font-heading font-bold text-lg md:text-xl text-foreground">
                 Institute of Commerce
               </span>
             </div>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              Dedicated to providing an unparalleled learning experience and shaping successful careers.
+            <p className="text-muted-foreground mb-4 md:mb-6 leading-relaxed text-sm md:text-base">
+              Helping commerce students score 70%+ in board exams through focused teaching and small batch sizes since 2019.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -55,20 +55,20 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="font-heading font-semibold text-lg mb-4 text-foreground">Get in Touch</h3>
-            <div className="space-y-4">
+            <div className="space-y-3 md:space-y-4">
               <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
-                <p className="text-muted-foreground">
+                <MapPin className="h-4 md:h-5 w-4 md:w-5 text-primary mt-1 flex-shrink-0" />
+                <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
                   Shivpur Road, Near Shivpur Mandir, Godda, Jharkhand 814133
                 </p>
               </div>
               <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-primary" />
-                <p className="text-muted-foreground">+91 9431380007</p>
+                <Phone className="h-4 md:h-5 w-4 md:w-5 text-primary flex-shrink-0" />
+                <p className="text-muted-foreground text-sm md:text-base">+91 6201245391</p>
               </div>
               <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-primary" />
-                <p className="text-muted-foreground break-words">contact@instituteofcommerce.in</p>
+                <Mail className="h-4 md:h-5 w-4 md:w-5 text-primary flex-shrink-0" />
+                <p className="text-muted-foreground text-sm md:text-base break-words">contact@instituteofcommerce.in</p>
               </div>
             </div>
           </div>

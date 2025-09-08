@@ -69,7 +69,7 @@ const Courses = () => {
             Our <span className="text-primary font-extrabold">Courses</span>
           </h1>
           <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
-            Comprehensive commerce education programs designed to build strong foundations and excel in your academic journey.
+            Complete preparation programs for Class 11, Class 12, and B.Com students. Small batches, focused teaching, proven results.
           </p>
         </div>
       </section>
@@ -121,34 +121,34 @@ const Courses = () => {
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-heading text-4xl md:text-5xl font-bold">Choose Your Path</h2>
+            <h2 className="font-heading text-4xl md:text-5xl font-bold">Course Programs</h2>
             <p className="mt-4 text-lg max-w-3xl mx-auto text-muted-foreground">
-              Select the course that best fits your academic goals and career aspirations.
+              Complete preparation for Class 11, Class 12, and B.Com studies. Each program includes study materials, mock tests, and doubt-clearing sessions.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {courses.map((course, index) => (
-              <div key={index} className="group relative bg-card rounded-lg border border-border p-4 md:p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow-hover">
+              <div key={index} className="group relative bg-card rounded-lg border border-border p-4 md:p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-glow-hover min-h-[400px] md:min-h-[450px] flex flex-col">
                 {course.popular && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-cta text-primary-foreground px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-semibold">
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                    <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 md:px-4 py-1 rounded-full text-xs md:text-sm font-semibold shadow-lg border-2 border-white/20 animate-pulse-glow">
                       Most Popular
                     </span>
                   </div>
                 )}
-                <div className={`ring-1 ring-border transition-colors group-hover:ring-primary ${course.popular ? 'ring-primary' : ''} rounded-lg p-4 md:p-6 h-full flex flex-col`}>
+                <div className={`ring-1 ring-border transition-colors group-hover:ring-primary ${course.popular ? 'ring-primary' : ''} rounded-lg p-4 md:p-6 flex-1 flex flex-col`}>
                   <div className="flex items-center justify-center mb-4">
                     <GraduationCap className="h-10 md:h-12 w-10 md:w-12 text-primary transition-transform group-hover:scale-110" />
                   </div>
                   <h3 className="text-lg md:text-xl lg:text-2xl font-bold font-heading mb-3 text-foreground transition-colors group-hover:text-primary text-center">{course.title}</h3>
                   <p className="text-muted-foreground mb-4 md:mb-6 text-sm md:text-base text-center flex-grow leading-relaxed">{course.description}</p>
                   
-                  <div className="mb-4 md:mb-6 grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 text-sm">
-                    <div className="flex items-center justify-center sm:justify-start text-muted-foreground">
+                  <div className="mb-4 md:mb-6 grid grid-cols-1 gap-3 md:gap-4 text-sm">
+                    <div className="flex items-center justify-center text-muted-foreground">
                       <Clock className="h-4 w-4 mr-2 text-primary flex-shrink-0" />
                       <span className="text-xs md:text-sm">{course.duration}</span>
                     </div>
-                    <div className="flex items-center justify-center sm:justify-start text-muted-foreground">
+                    <div className="flex items-center justify-center text-muted-foreground">
                       <Users className="h-4 w-4 mr-2 text-primary flex-shrink-0" />
                       <span className="text-xs md:text-sm">{course.batchSize}</span>
                     </div>

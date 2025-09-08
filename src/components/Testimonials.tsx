@@ -12,55 +12,55 @@ const Testimonials = () => {
       result: "Excellent Results",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "The teaching style here is very clear and easy to understand. Regular tests helped me improve my confidence before the boards."
+      text: "Accountancy was my weakest subject. Sir explained journal entries step by step until I got it right. Scored 68% in boards."
     },
     {
       name: "Shivraj",
-      course: "Commerce Student",
-      result: "Great Performance",
+      course: "Class 12 Commerce",
+      result: "JAC Board - 71%",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "Small batches and personal attention made a huge difference. I could ask doubts freely and got quick solutions."
+      text: "Only 8 students in my batch. I could ask questions anytime. Business Studies became my strongest subject."
     },
     {
       name: "Zaid",
-      course: "Commerce Student",
-      result: "Outstanding Results",
+      course: "Class 11 Commerce",
+      result: "Improved from 45% to 62%",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "Concept clarity is the best part of this institute. The teachers focus on understanding rather than just memorizing."
+      text: "I came from science background. Sir taught me commerce basics from zero. Now I understand everything clearly."
     },
     {
       name: "Aditya",
-      course: "Commerce Student",
-      result: "Excellent Preparation",
+      course: "Class 12 Commerce",
+      result: "CBSE Board - 74%",
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "The notes and revision classes were very helpful. I felt fully prepared for my exams."
+      text: "Mock tests every month helped me practice time management. I was confident during the actual board exams."
     },
     {
       name: "Raman",
-      course: "Commerce Student",
-      result: "Improved Performance",
+      course: "Class 12 Commerce",
+      result: "JAC Board - 73%",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "Thanks to the guidance here, I improved my score and built a strong base for my future studies."
+      text: "Started with 50% in Class 11. Daily doubt clearing sessions helped me reach 73% in boards. Thank you sir."
     },
     {
       name: "Anish",
-      course: "Commerce Student",
-      result: "Great Success",
+      course: "Class 12 Commerce",
+      result: "BSBE Board - 73%",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "The faculty are very supportive and always motivate us to give our best in exams."
+      text: "Sir taught us answer writing techniques. My Economics answers were well-structured and got full marks."
     },
     {
       name: "Anthony",
-      course: "Commerce Student",
-      result: "Excellent Progress",
+      course: "Class 12 Commerce",
+      result: "JAC Board - 72%",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      text: "I liked the regular mock tests and progress tracking. It helped me know exactly where I stood."
+      text: "Weekly tests showed me exactly where I was weak. Focused practice on those topics helped me score 72%."
     }
   ];
 
@@ -89,10 +89,10 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-6">
-            What Our Students Say
+            Student Success Stories
           </h2>
           <p className="font-inter text-xl text-muted-foreground max-w-2xl mx-auto">
-            Hear from our successful students who achieved their academic goals with us
+            Real feedback from students who improved their commerce scores with our focused teaching approach
           </p>
         </div>
         
@@ -101,12 +101,12 @@ const Testimonials = () => {
             {/* Quote Icon */}
             <Quote className="absolute top-6 left-6 h-12 w-12 text-primary/20" />
             
-            <div className="relative z-10 p-8 md:p-12">
-              <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="relative z-10 p-6 md:p-8 lg:p-12">
+              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
                 {/* Student Image */}
               <div className="flex-shrink-0">
-                <div className="w-24 h-24 rounded-full bg-secondary flex items-center justify-center border border-border">
-                  <span className="font-montserrat font-bold text-xl text-foreground">
+                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-secondary flex items-center justify-center border border-border">
+                  <span className="font-montserrat font-bold text-lg md:text-xl text-foreground">
                     {currentTestimonial.name.split(' ').map(n => n[0]).join('')}
                   </span>
                 </div>
@@ -122,19 +122,19 @@ const Testimonials = () => {
                   </div>
                   
                   {/* Testimonial Text */}
-                  <p className="font-inter text-lg text-foreground mb-6 leading-relaxed">
+                  <p className="font-inter text-base md:text-lg text-foreground mb-4 md:mb-6 leading-relaxed">
                     "{currentTestimonial.text}"
                   </p>
                   
                   {/* Student Info */}
                   <div>
-                    <h4 className="font-montserrat font-bold text-xl text-foreground mb-1">
+                    <h4 className="font-montserrat font-bold text-lg md:text-xl text-foreground mb-1">
                       {currentTestimonial.name}
                     </h4>
-                    <p className="font-inter text-muted-foreground mb-1">
+                    <p className="font-inter text-sm md:text-base text-muted-foreground mb-1">
                       {currentTestimonial.course}
                     </p>
-                    <p className="font-inter font-semibold text-primary">
+                    <p className="font-inter font-semibold text-sm md:text-base text-primary">
                       {currentTestimonial.result}
                     </p>
                   </div>

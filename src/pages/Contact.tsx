@@ -96,10 +96,10 @@ const Contact = () => {
         <div className="absolute inset-0 bg-grid-sm opacity-5" />
         <div className="container mx-auto px-4 relative z-10">
           <h1 className="font-heading font-extrabold text-5xl md:text-7xl text-transparent bg-clip-text bg-gradient-to-b from-gray-900 to-gray-700 leading-tight tracking-tighter">
-            Get In Touch
+            Contact Us
           </h1>
           <p className="mt-6 text-lg md:text-xl max-w-3xl mx-auto text-muted-foreground">
-            Ready to start your commerce education journey? Contact us today for course information, admission details, or any questions you may have.
+            Questions about our courses? Want to know about admission process or batch timings? Call us or visit our center in Godda.
           </p>
         </div>
       </section>
@@ -107,10 +107,10 @@ const Contact = () => {
       {/* Contact Form & Info Section */}
       <section className="py-20 md:py-32">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Form Card */}
-            <div className="group relative p-8 bg-card rounded-lg border border-border transition-all duration-300 hover:shadow-glow-hover">
-              <h2 className="font-heading text-3xl font-bold mb-6">Send Us a Message</h2>
+            <div className="group relative p-6 md:p-8 bg-card rounded-lg border border-border transition-all duration-300 hover:shadow-glow-hover">
+              <h2 className="font-heading text-2xl md:text-3xl font-bold mb-4 md:mb-6">Send Us a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label className="font-semibold text-foreground mb-2 block">Full Name *</label>
@@ -168,8 +168,8 @@ const Contact = () => {
 
             {/* Contact Info & Map */}
             <div className="space-y-8">
-              <div className="group relative p-8 bg-card rounded-lg border border-border transition-all duration-300 hover:shadow-glow-hover">
-                <h3 className="font-heading text-3xl font-bold mb-6">Contact Information</h3>
+              <div className="group relative p-6 md:p-8 bg-card rounded-lg border border-border transition-all duration-300 hover:shadow-glow-hover">
+                <h3 className="font-heading text-2xl md:text-3xl font-bold mb-4 md:mb-6">Contact Information</h3>
                 <div className="space-y-4 md:space-y-6">
                   <div className="flex items-start space-x-3 md:space-x-4">
                     <MapPin className="h-5 md:h-6 w-5 md:w-6 text-primary mt-1 flex-shrink-0" />
@@ -184,7 +184,7 @@ const Contact = () => {
                     <Phone className="h-5 md:h-6 w-5 md:w-6 text-primary mt-1 flex-shrink-0" />
                     <div className="min-w-0 flex-1">
                       <h4 className="font-semibold text-foreground mb-1 text-sm md:text-base">Phone</h4>
-                      <p className="text-muted-foreground text-xs md:text-sm">+91 94313 80007</p>
+                      <p className="text-muted-foreground text-xs md:text-sm">+91 6201245391</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3 md:space-x-4">

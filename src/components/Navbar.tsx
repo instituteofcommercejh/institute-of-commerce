@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center hover-scale">
-            <span className="font-heading font-semibold text-xl text-foreground hover:text-primary transition-colors">
+            <span className="font-heading font-semibold text-lg md:text-xl text-foreground hover:text-primary transition-colors">
               Institute of Commerce
             </span>
           </Link>
